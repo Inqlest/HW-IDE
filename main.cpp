@@ -41,6 +41,9 @@ int main() {
     ofstream out("out.txt");
         if (!out.is_open()) {
     cout << "out.txt not open" << std::endl;
+    in.close();
+    delete[] arr1;
+    delete[] arr2;
     return 1;
   }
     out << M;
